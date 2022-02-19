@@ -1,0 +1,24 @@
+/*Given an array of ints, return the number of 9's in the array.
+
+arrayCount9([1, 2, 9]) → 1
+
+arrayCount9([1, 9, 9]) → 2
+
+arrayCount9([1, 9, 9, 3, 9]) → 3
+*/
+
+  public int arrayCount9(int[] nums) {
+    int h=0;
+    int n=0;
+    while(h<nums.length)
+    {
+      if(nums[h]==9)
+      {
+        n+=1;
+        h+=1;
+      }
+      else h+=1;
+    
+    }
+    return n;
+  }
